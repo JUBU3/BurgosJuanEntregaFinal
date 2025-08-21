@@ -1,0 +1,283 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #FEFAE0;
+}
+
+header{
+    background-color: #283618;
+    padding: 16px 0;
+}
+
+header img{
+    border-radius: 20%;
+}
+
+header h1{
+    font-family: "Alfa Slab One", serif;
+    color: #BC6C25;
+    font-size: 40px;
+    font-weight: 100;
+    font-style: normal;
+    display: inline-block;
+    position: relative;
+    /*bottom: 10px;*/
+    margin-left: 10px;
+}
+
+nav{
+    background-color: #606C38;
+    margin-bottom: 20px;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li{
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+footer{
+    background-color: #DDA15E;
+    clear: both;
+    color: #333;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;
+}
+
+nav ul li a.activo{
+    background-color: #283618;
+}
+
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h2{
+    color: #DDA15E;
+    font-weight: 400;
+}
+
+.bienvenidos{
+    width: 75%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.testimonios{
+    width: 25%;
+}
+
+.columnas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bienvenidos p{
+    font-size: 20px;
+}
+
+.testimonio{
+    background-color: #ccc;
+    padding: 16px;
+}
+
+.testimonio .cita{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+    display: block;
+}
+
+.testimonio .autor{
+    font-size: 10px;
+    text-align: center;
+    display: block;
+    margin: 12px 0;
+}
+
+.historia p{
+    font-size: 12px;
+}
+
+#carouselExampleDark{
+    height:40%;
+    width:80%;
+    
+}
+
+.carouselcustom{
+    justify-content: center;
+    
+    display: flex;
+    color: white;
+}
+
+.carousel-item h5,
+.carousel-item p{
+    color: white;
+}
+
+/* fin css Index */
+
+/* inicio css productos*/
+
+.servicio{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.servicio .info h4{
+    color:v ;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 1px solid #DDA15E;
+    padding-bottom: 10px;
+}
+
+.servicio .info p{
+    font-size: 13px;
+}
+
+.servicio img{
+    border-radius: 13px;
+    display: block;
+    max-width: 225px;
+}
+
+/* fin css productos*/
+
+/* inicio css novedades*/
+.novedades{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+    
+}
+
+.card-body h5{
+    color:v ;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 1px solid #DDA15E;
+    padding-bottom: 10px;
+
+}
+
+.card-body p{
+
+    font-size: 12px;
+
+}
+
+.ofertas{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+    
+}
+
+.precios{
+    columns: 2;
+}
+
+.precioAnterior{
+    color: red;
+    
+}
+.precioOFerta{
+    color: rgb(1, 87, 1);
+    font-weight: bold;
+    
+}
+
+
+/* fin css novedades*/
+
+/* inicio css contacto*/
+
+.contacto{
+    display: flex;
+    gap: 24px;
+}
+
+.contacto div{
+    width: 100%;
+}
+
+.datos p{
+    font-size: 14px;
+
+}
+
+.datos ul li{
+    font-size: 13px;
+}
+
+.formulario p{
+    display: flex;
+}
+
+.formulario p label{
+    min-width: 80px;
+}
+
+.formulario p label{
+    display: flex;
+    align-items: center;
+}
+
+.formulario p:nth-child(4){
+    align-items: start;
+}
+
+.formulario textarea{
+    resize: none;
+    height: 150px;
+}
+
+.formulario input[type="submit"] {
+    background: #6da9ed;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    left: 5rem;
+    cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover{
+    background-color: #2e64a1;
+}
+
+
+
+

@@ -1,0 +1,36 @@
+<div class="container" style="margin:100px auto">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4>Editar Producto {{producto.nombre_producto}}</h4>
+            <form action="/admin/ABM/editarproducto" method="post" enctype="multipart/form-data">
+
+            <input type="hidden" value="{{producto.Id}}" name = "Id">
+                <div class="mb-3 row">
+                    <input type="text" class="form-control" placeholder="Nombre" name="nombre_producto" value="{{producto.nombre_producto}}">
+                </div>
+                <div class="mb-3 row">
+                    <input type="text" class="form-control" placeholder="Precio" name="precio" value="{{producto.precio}}">
+                </div>
+                <div class="mb-3 row">
+                    <textarea type="text" class="form-control" placeholder="Descripcion" name="descripcion">{{producto.descripcion}}</textarea>
+                </div>
+                <div class="mb-3 row">
+                    <p>
+                        <label>Imagen: <input type="file" name="imagen" id="imagen"></label>
+                    </p>
+                    <p>
+                        <label><input type="checkbox" name="img_delete" id="img_delete" value="1">Eliminar imagen actual?</label>
+                        <input type="hidden" name="img_original" value="{{producto.img_id}}">
+                    </p>
+
+                </div>
+
+                <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+
+            </form>
+            {{#if error}}
+            <p>{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>
