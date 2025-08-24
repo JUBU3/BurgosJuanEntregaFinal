@@ -8,6 +8,8 @@ import { useState } from 'react';
 
 var postUrl = `${process.env.NEXT_APP_API_URL}/api/contacto`;
 
+console.log(postUrl);
+
 export default function Contacto(postUrl) {
 
     const initialForm = {

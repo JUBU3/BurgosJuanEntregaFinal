@@ -25,6 +25,10 @@ var adminRouter = require('./routes/admin/ABM');
 var apiRouter = require('./routes/api');
 
 
+
+
+
+
 var app = express();
 
 // view engine setup
@@ -71,7 +75,8 @@ app.use('/novedades',novedadesRouter);
 app.use('/admin/login', loginRouter);
 app.use('/admin/ABM', secured ,adminRouter);
 
-app.use('/api', apiRouter);
+app.use('/api',cors(),apiRouter);
+
 
 
 
