@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 
 
-var postUrl = `${process.env.NEXT_APP_API_URL}/api/contacto`;
+var postUrl = `${process.env.NEXT_PUBLIC_API_URL}/api/contacto`;
 
 console.log(postUrl);
 
@@ -36,7 +36,7 @@ export default function Contacto(postUrl) {
         setMsg('');
         setSending(true);
 
-        const rawResponse = await fetch(postUrl,{
+        const rawResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/contacto`,{
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
